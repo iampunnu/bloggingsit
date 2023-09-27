@@ -2,11 +2,12 @@ package com.project.boggingsite.user;
 
 import com.project.boggingsite.blog.BlogEntity;
 import com.project.boggingsite.commons.BaseEntity;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.List;
 import java.util.UUID;
-
+@Data
 @Entity(name="users")
 public class UserEntity extends BaseEntity {
     @Column(nullable = false,length = 30,unique = true)

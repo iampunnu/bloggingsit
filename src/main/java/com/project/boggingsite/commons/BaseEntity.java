@@ -1,5 +1,6 @@
 package com.project.boggingsite.commons;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
@@ -11,8 +12,7 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.UUID;
 
-@Getter
-@Setter
+@Data
 @MappedSuperclass
 public class BaseEntity {
     //    @Id
